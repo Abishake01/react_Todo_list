@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Global Styles */
+ 
+
+/* App Container */
+.app {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Search Bar */
+.searchForm {
+  display: flex;
+  margin: 20px 0;
+}
+
+.searchForm input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.searchForm button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.searchForm button:hover {
+  background-color: #333;
+}
+.addform{
+  display: flex;
+  margin: 20px 0;
+}
+.addform input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.addform button{
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.addform button:hover {
+  background-color: #333;
+}
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.item {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  margin-bottom: 10px;
+}
+
+.item label {
+   
+  margin: 0 10px;
+}
+
+.item input[type='checkbox'] {
+  cursor: pointer;
+}
+
+.item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px; 
+  
+}
+
+.item button:hover {
+  background-color: #c0392b;
+}
+
+/* Empty List Message */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin: 20px 0;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  margin: 20px 0;
+}
+
+ 
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item button {
+    margin-top: 5px;
+  }
+}
